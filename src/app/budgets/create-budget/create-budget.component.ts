@@ -13,7 +13,7 @@ export class CreateBudgetComponent implements OnInit {
   @Output() create: EventEmitter<any> = new EventEmitter();
   @Output() close: EventEmitter<any> = new EventEmitter();
 
-  constructor(@Inject('currencies') private currencies: string[],
+  constructor(@Inject('currencies') public currencies: string[],
               private fb: FormBuilder) { }
 
   public ngOnInit(): void {
