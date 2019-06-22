@@ -1,0 +1,86 @@
+.create-budget__modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(224,224,224, 0.7);
+  z-index: 2;
+}
+
+.create-budget__form {
+  width: 290px;
+  max-height: 95%;
+  padding: 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background: #fff;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  overflow: auto;
+}
+
+.create-budget__title {
+  margin: 0 0 10px;
+}
+
+.create-budget__label {
+  font-size: 0.75em;
+  color: #9E9E9E;
+}
+
+.create-budget__input {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.create-budget__input_container {
+  display: flex;
+  height: 28px;
+  padding: 0;
+  overflow: hidden;
+
+  .create-budget__input {
+    height: 26px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+
+  .create-budget__input_currency {
+    flex: 0 0 60px;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.button {
+  height: 28px;
+  background: #fff;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  &:hover:not([disabled]) {
+    background: #E0E0E0;
+    color: #fff;
+  }
+}

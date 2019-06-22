@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #fafafa;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.warning {
+  color: #721c24;
+  background-color: #f8d7da;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-top: 1rem;
+  border: 1px solid #f5c6cb;
+  border-radius: 2px;
+}

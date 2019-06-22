@@ -1,0 +1,21 @@
+<form novalidate [formGroup]="createBudgetForm" class="create-budget__form">
+  <h3 class="create-budget__title">Create Budget</h3>
+
+  <label class="create-budget__label" for="name">Enter Name Budget</label>
+  <input class="create-budget__input" id="name" type="text" formControlName="name" #name>
+  <label class="create-budget__label" for="limit">Enter Limit Budget</label>
+  <span class="create-budget__input create-budget__input_container">
+    <input class="create-budget__input" type="number" id="limit" value="1000" formControlName="limit" #limit>
+    <select class="create-budget__input create-budget__input_currency" formControlName="currency" #currency>
+      <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+    </select>
+  </span>
+
+  <span class="buttons-container">
+    <input class="button" (click)="closeModal()" type="button" value="Cancel">
+    <input [disabled]="!createBudgetForm.valid" class="button" type="button"
+           (click)="createBudget()" value="Create Budget">
+  </span>
+</form>
+<div class="create-budget__modal">
+</div>

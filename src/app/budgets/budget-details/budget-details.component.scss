@@ -1,0 +1,126 @@
+.details__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.details__card {
+  width: 35%;
+  min-width: 290px;
+  margin-top: 15px;
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.details__name {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.details__text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.details__label {
+  font-size: 0.75em;
+  color: #9E9E9E;
+}
+
+.details__label_icon {
+  font-size: 25px;
+}
+
+.details__list {
+  width: 35%;
+  min-width: 290px;
+  margin-top: 15px;
+
+  .details__card {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.details__add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s box-shadow;
+
+  &:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.details__transaction {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-width: 290px;
+  margin-top: -1px;
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.details__row {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &:last-of-type {
+    padding-right: 45px;
+  }
+}
+
+.details__remove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  border: 1px solid #E0E0E0;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  svg {
+    fill: #ff5252;
+  }
+}
+
+.details__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+}
