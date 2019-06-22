@@ -1,4 +1,5 @@
-# Budget [DEMO](https://github.com/angular/angular-cli)
+# Budget 
+[DEMO](https://alex-krava.github.io/budget/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
